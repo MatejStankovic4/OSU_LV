@@ -69,7 +69,18 @@ data = pd.read_csv('data_C02_emission.csv')
 
 #G
 
-Diesel4Cylinders = data[(data['Cylinders'] == 4) & (data['Fuel Type'] == 'D')]
-Diesel4Cylinders.sort_values(by = 'Fuel Consumption City (L/100km)')
-Diesel4Cylinders.head(1)
-print(Diesel4Cylinders)
+#Diesel4Cylinders = data[(data['Cylinders'] == 4) & (data['Fuel Type'] == 'D')]
+#Diesel4Cylinders.sort_values(by = 'Fuel Consumption City (L/100km)')
+#mostFuelConsumption = Diesel4Cylinders.head(1)
+#print(mostFuelConsumption)
+
+#H
+
+#manualGears = data[data['Transmission'].str.startswith(('AM', 'M'), na=False)]
+#print("Cars with manual gears: ", len(manualGears))
+
+#I
+
+#print(data.corr(numeric_only=True))
+
+
