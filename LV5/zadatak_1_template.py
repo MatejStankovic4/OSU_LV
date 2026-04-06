@@ -58,3 +58,15 @@ recall = recall_score(y_test, y_test_p)
 print("Tocnost: ", accuracy)
 print("Preciznost: ", precision)
 print("Odziv: ", recall)
+
+#E
+
+is_correct = (y_test_p == y_test)
+plt.figure()
+plt.scatter(X_test[is_correct, 0], X_test[is_correct, 1], color="green", label="dobro")
+plt.scatter(X_test[~is_correct, 0], X_test[~is_correct, 1],color="red", label="pogresno")
+plt.xlabel("x1")
+plt.ylabel("x2")
+plt.title("Dobro vs pogresno klasificirani primjeri")
+plt.legend()
+plt.show()
